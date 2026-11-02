@@ -1,0 +1,88 @@
+body {
+  background-color: #0d1117;
+  font-family: "Eater", serif;
+  color: #c9d1d9;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+h1, h2, h3 {
+  color: rgb(57, 255, 156);
+  font-family: "Nosifer", sans-serif;
+  font-size: 1.5rem;
+  line-height: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+a {
+  color: #0d1117;
+  background-color: #ff9f1c;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
+a:hover {
+  background-color: #ffc15e;
+}
+
+.container {
+  width: 45rem;   /* largeur maximale du contenu */
+  margin: 0 auto;     /* marges auto à gauche et à droite = centrage */
+  padding: 20px;
+}
+
+.container img {
+  max-width: 20%;
+  height: auto;
+}
+
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  margin-bottom: 16px; /* espace entre deux cards */
+}
+
+#btn {
+  padding: 0 1.5rem;
+  border-radius: 5px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a {
+    transition: color 0s ease;
+  }
+}
